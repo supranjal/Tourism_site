@@ -1,0 +1,119 @@
+/* Responsive design styles */
+
+/* Shared mobile header styles */
+@media (max-width: 768px) {
+  /* Make header overlay on top of hero */
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: none;
+    padding: 20px 0;
+    z-index: 100;
+  }
+  
+  .navigation-bar ul {
+    display: none;
+  }
+  
+  .navigation-bar {
+    background: none;
+    justify-content: center;
+    position: relative;
+    border-radius: 0;
+    border: none;
+    backdrop-filter: none;
+    box-shadow: none;
+  }
+  
+  .nav-logo {
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .nav-logo img {
+    height: 40px;
+  }
+  
+  .logo-text {
+    font-size: 1.1rem;
+    font-weight: 700;
+  }
+
+  /* Hero responsive */
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    font-size: 1.1rem;
+  }
+  
+  /* Sections responsive */
+  .grid-base {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Reverse order for hills section to display the photo first */
+  .hills-grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  
+  .heading-base {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile specific styles */
+@media (max-width: 480px) {
+  header {
+    padding: 15px 0;
+  }
+  
+  .nav-logo {
+    gap: 8px;
+  }
+  
+  .nav-logo img {
+    height: 35px;
+  }
+  
+  .logo-text {
+    font-size: 1rem;
+  }
+  
+  /* Hero mobile */
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
+  
+  .welcome-text {
+    font-size: 1rem;
+  }
+  
+  /* Hero button mobile hover effects */
+  .hero-btn:hover {
+    background: linear-gradient(135deg, #FFD700, #FFA500);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+  }
+  
+  .hero-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 3px 10px rgba(255, 215, 0, 0.3);
+  }
+  
+  .heading-base {
+    font-size: 1.8rem;
+  }
+  
+  .paragraph-base {
+    font-size: 1rem;
+  }
+}

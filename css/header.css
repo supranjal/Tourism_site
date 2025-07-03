@@ -1,0 +1,88 @@
+/* Header and Navigation styles */
+header {
+  background: none;
+  padding: var(--spacing-md) var(--spacing-lg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigation-bar {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);/* adds the frosty glass look */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  padding: var(--spacing-sm) var(--spacing-lg);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.nav-logo img {
+  height: 35px;
+  width: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.logo-text {
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--snow-white);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navigation-bar ul {
+  display: flex;
+  list-style: none;
+  gap: var(--spacing-md);
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-bar a {
+  color: var(--snow-white);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navigation-bar a::before {/* for the golden underline */
+  content: '';
+  position: absolute;
+  bottom: -3px;/* places it below the link text */
+  left: 50%;
+  width: 0;/* to make the line initially invisible */
+  height: 2px;/* sets the thickness of the underline */
+  background: var(--nepal-gold);
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.navigation-bar a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+}
+
+.navigation-bar a:hover::before {/* this animates the line when hovered */
+  width: 80%;
+}

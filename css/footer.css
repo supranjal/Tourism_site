@@ -1,0 +1,16 @@
+/* Footer styles */
+footer {
+  background: var(--dark-gray);
+  color: var(--snow-white);
+  text-align: center;
+  padding: var(--spacing-lg);
+  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}

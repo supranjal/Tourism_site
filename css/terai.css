@@ -1,0 +1,12 @@
+/* Terai section styles */
+.terai-section {
+  background: var(--light-gray);
+}
+
+.terai-grid {
+  grid-template-columns: 1fr 2fr;
+}
+
+.terai-content h2 {
+  color: var(--earth-brown);
+}

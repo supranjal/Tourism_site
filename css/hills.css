@@ -1,0 +1,12 @@
+/* Hills section styles */
+.hills-section {
+  background: var(--snow-white);
+}
+
+.hills-grid {
+  grid-template-columns: 2fr 1fr;
+}
+
+.hill-content h2 {
+  color: var(--forest-green);
+}

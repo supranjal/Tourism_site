@@ -1,0 +1,88 @@
+/* Hero section styles */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--snow-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  z-index: 1;
+  max-width: 800px;
+  padding: var(--spacing-lg);
+  margin-top: 0;
+}
+
+.hero h1 {
+  font-family: var(--font-secondary);
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: var(--spacing-sm);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: var(--spacing-lg);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.welcome-text {
+  font-size: 1.1rem;
+  color: var(--nepal-gold);
+  margin-bottom: var(--spacing-sm);
+  font-weight: 500;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+  gap: 0.5rem;
+}
+
+
+
+/* Hero Button Styles */
+.hero-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, var(--nepal-gold), #FFA500);
+  color: var(--dark-gray);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: 2px solid var(--nepal-gold);
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+  margin-top: 1.5rem;
+}
+
+.hero-btn:hover {
+  background: transparent;
+  color: var(--nepal-gold);
+  border-color: var(--nepal-gold);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.4);
+  cursor: pointer;
+}
+
+.hero-btn:active {
+  transform: translateY(-1px);
+}

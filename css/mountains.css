@@ -1,0 +1,12 @@
+/* Mountains section styles */
+.mountains-section {
+  background: var(--light-gray);
+}
+
+.mountains-grid {
+  grid-template-columns: 1fr 2fr;
+}
+
+.mountain-content h2 {
+  color: var(--himalayan-blue);
+}

@@ -1,0 +1,28 @@
+/* Nepal Tourism Website - CSS Variables */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Merriweather:wght@300;400;700&display=swap');
+
+:root {
+  /* Colors  */
+  --nepal-gold: #FFD700;
+  --himalayan-blue: #4A90E2;
+  --forest-green: #2E7D32;
+  --earth-brown: #8D6E63;
+  --snow-white: #FFFFFF;
+  --light-gray: #F5F5F5;
+  --dark-gray: #333333;
+  --medium-gray: #666666;
+  
+  /* fonts */
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Merriweather', serif;
+  
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  
+  /* Shadows */
+  --shadow-medium: 0 4px 8px rgba(0,0,0,0.15);
+}
